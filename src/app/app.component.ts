@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { CryptoListComponent } from './crypto-list/crypto-list.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.less'
+  standalone: true,
+  imports: [CryptoListComponent], // Import other components
+  template: `<app-crypto-list></app-crypto-list>`,
+  styleUrls: ['./app.component.less'],
 })
-export class AppComponent {
-  title = 'crypto-tracker';
-}
+export class AppComponent {}

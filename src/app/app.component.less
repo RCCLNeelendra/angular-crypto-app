@@ -1,0 +1,91 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* App Container */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  /* Search Input Field */
+  .search-container {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+  
+  .search-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Card Layout for Crypto Data */
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .card-container mat-card {
+    width: 300px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .card-container mat-card h3 {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .card-container mat-card p {
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+  .card-container mat-card .price {
+    font-size: 1.3em;
+    color: #4caf50;
+  }
+  
+  /* Media Query for Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .card-container mat-card {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .search-container {
+      width: 100%;
+    }
+  }
+  
+  /* For small screens (mobile) */
+  @media (max-width: 480px) {
+    .card-container mat-card {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .container {
+      padding: 10px;
+    }
+  }
+  
