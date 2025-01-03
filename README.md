@@ -11,3 +11,19 @@ This is a responsive Angular application for tracking cryptocurrency data, built
 ## Installation
 
 1. Clone the repository:
+2. Navigate to the project directory: cd <repository-name>
+3. Install dependencies: npm install
+4. Run the application: ng serve
+
+## Deployment
+
+- CI/CD Pipeline: Configured using Azure DevOps.
+- Deployment URL: [https://<your-app-name>.azurewebsites.net](https://<your-app-name>.azurewebsites.net)
+
+## Demo
+
+Include screenshots or a link to a live demo.
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
